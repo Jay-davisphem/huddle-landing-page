@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
 :root {
   --pri-pink: hsl(322, 100%, 66%);
   --neutral-pale-color: hsl(193, 100%, 96%);
@@ -11,6 +13,7 @@
 }
 
 html {
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
 }
 body {
@@ -18,7 +21,10 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
 /* Root Structure */
 header {
   display: flex;
