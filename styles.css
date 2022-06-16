@@ -166,7 +166,7 @@ a:hover {
 .bottom {
   position: absolute;
   bottom: 5%;
-  right: 3%;
+  right: -120%;
 }
 .body_2.body {
   flex-direction: row-reverse;
@@ -197,6 +197,44 @@ a:hover {
 .addr > small {
   padding: 20px;
 }
+
+/* Some simple Animations */
+.intro_1 .btn {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+footer .bottom {
+  animation-duration: 20s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 @media (max-width: 700px) {
   main {
     width: 90%;
